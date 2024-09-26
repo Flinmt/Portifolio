@@ -1,6 +1,13 @@
-import {useTranslations} from 'next-intl';
- 
+import { Connect } from "../components/connect-button";
+import { Locale } from "../components/locale-button";
+
 export default function HomePage() {
-  const t = useTranslations('HomePage');
-  return <h1>{t('hello')}</h1>;
+  return (
+    <main className="">
+      <header className="flex justify-between mt-6">
+        <Locale />
+        <Connect />
+      </header>
+    </main>
+  );
 }

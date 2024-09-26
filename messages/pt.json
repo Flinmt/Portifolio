@@ -1,5 +1,8 @@
 {
-  "HomePage": {
-    "hello": "Olá Mundo"
+  "ConnectButton": {
+    "connect": "Conecte-se Comigo"
+  },
+  "LocaleButton": {
+    "locale": "Pt"
   }
 }
