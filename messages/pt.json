@@ -1,6 +1,9 @@
 {
   "ConnectButton": {
-    "connect": "Conecte-se Comigo"
+    "connect": "Conecte-se Comigo",
+    "name": "Nome",
+    "subject": "Assunto",
+    "message": "Mensagem"
   },
   "LocaleButton": {
     "locale": "Pt"

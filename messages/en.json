@@ -1,6 +1,9 @@
 {
   "ConnectButton": {
-    "connect": "Let's Connect"
+    "connect": "Let's Connect",
+    "name": "Name",
+    "subject": "Subject",
+    "message": "Message"
   },
   "LocaleButton": {
     "locale": "En"
