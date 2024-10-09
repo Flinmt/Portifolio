@@ -3,7 +3,9 @@
     "connect": "Conecte-se Comigo",
     "name": "Nome",
     "subject": "Assunto",
-    "message": "Mensagem"
+    "message": "Mensagem",
+    "download": "Baixar CV",
+    "copied": "Copiado!"
   },
   "LocaleButton": {
     "locale": "Pt"

@@ -3,7 +3,9 @@
     "connect": "Let's Connect",
     "name": "Name",
     "subject": "Subject",
-    "message": "Message"
+    "message": "Message",
+    "download": "Download CV",
+    "copied": "Copied!"
   },
   "LocaleButton": {
     "locale": "En"
