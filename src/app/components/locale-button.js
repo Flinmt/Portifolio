@@ -19,7 +19,7 @@ export function Locale() {
   return (
     <button
       onClick={ChangeLocale}
-      className=" ml-5 inline-flex items-center justify-center px-2 font-mono font-bold text-lg tracking-wide text-[#7E678B] bg-white rounded-lg h-[35px] shadow-xl"
+      className=" inline-flex items-center justify-center px-2 font-mono font-bold text-lg tracking-wide md:text-[#7E678B] md:bg-white text-white bg-[#7E678B] rounded-lg h-[35px] shadow-xl"
     >
       <h1>{t("locale")}</h1>
     </button>

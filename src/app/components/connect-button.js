@@ -8,29 +8,25 @@ import Instagram from "../assets/connect-button/instagram-logo.svg";
 import Twitter from "../assets/connect-button/twitter-logo.svg";
 import Github from "../assets/connect-button/github-logo.svg";
 import Download from "../assets/connect-button/download.svg";
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 export function Connect() {
   const t = useTranslations("ConnectButton");
   const [clipBoard, setClipBoard] = useState("flinmtdev@gmail.com");
-  const emailRef = useRef(null);
 
   const handleEmailCopy = () => {
-    const email = emailRef.current.textContent;
-    navigator.clipboard.writeText(email);
+    navigator.clipboard.writeText("flinmtdev@gmail.com");
     setClipBoard(t("copied"));
-    emailRef.current.classList.add("copied");
 
     setTimeout(() => {
       setClipBoard("flinmtdev@gmail.com");
-      emailRef.current.classList.remove("copied");
     }, 2000);
   };
 
   return (
     <div className="">
       <button
-        className=" mr-5 text-lg flex text-[#7E678B] font-mono font-bold justify-center items-center"
+        className=" text-lg flex md:text-[#ffffff] text-[#7E678B] font-mono font-bold justify-center items-center"
         onClick={() => document.getElementById("contact").showModal()}
       >
         <span className=" mr-2">{t("connect")}</span>
@@ -47,7 +43,7 @@ export function Connect() {
 
           <button
             onClick={handleEmailCopy}
-            className=" bg-[#7E678B] mt-10 flex justify-center items-center h-20 shadow-lg rounded-lg w-full transform active:scale-x-75 active:scale-y-75 transition-transform flex"
+            className=" bg-[#7E678B] mt-10 justify-center items-center h-20 shadow-lg rounded-lg w-full transform active:scale-x-75 active:scale-y-75 transition-transform flex"
           >
             <Image
               src={Envelop}
@@ -57,7 +53,6 @@ export function Connect() {
               className="mr-5"
             />
             <span
-              ref={emailRef}
               className=" text-lg flex text-white font-mono font-bold"
             >
               {clipBoard}
